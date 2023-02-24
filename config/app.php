@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => env('VERCEL_ENV', env('APP_ENV', 'production')),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('VERCEL_URL', env('APP_URL', 'http://localhost')),
 
     'asset_url' => env('ASSET_URL', null),
 
