@@ -1,19 +1,36 @@
 <!doctype html>
 <html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title }} — {{ settings:site_name }}</title>
-        <meta name="description" content="{{ excerpt ?? title }}">
-        <meta name="theme-color" content="00908F">
-        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
-        <script src="{{ mix src='/js/site.js' }}" defer></script>
-        <script defer data-domain="rubenvanerk.com" src="https://plausible.wrve.nl/js/script.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ title }} — {{ settings:site_name }}</title>
+
+    <meta name="description" content="{{ excerpt ?? title }}">
+
+    <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+
+    <meta name="theme-color" content="24e0b8">
+    {{ asset url="/assets/site/favicon/apple-touch-icon.png" }}
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url }}">
+    {{ /asset }}
+    {{ asset url="/assets/site/favicon/favicon-32x32.png" }}
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ url }}">
+    {{ /asset }}
+    {{ asset url="/assets/site/favicon/favicon-16x16.png" }}
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ url }}">
+    {{ /asset }}
+    {{ asset url="/assets/site/favicon/site.webmanifest" }}
+        <link rel="manifest" href="{{ url }}">
+    {{ /asset }}
+
+    <script src="{{ mix src='/js/site.js' }}" defer></script>
+    <script defer data-domain="rubenvanerk.com" src="https://plausible.wrve.nl/js/script.js"></script>
 </head>
-    <body class="bg-white font-sans leading-normal text-grey-800 px-4 sm:px-10" x-data="{ showMobileNav: false }">
-        {{ partial:nav }}
-        {{ template_content }}
-        {{ partial:footer }}
-    </body>
+<body class="bg-white font-sans leading-normal text-grey-800 px-4 sm:px-10" x-data="{ showMobileNav: false }">
+    {{ partial:nav }}
+    {{ template_content }}
+    {{ partial:footer }}
+</body>
 </html>

@@ -553,8 +553,6 @@ video {
   align-items: center !important;
 }.justify-between{
   justify-content: space-between !important;
-}.rounded{
-  border-radius: 0.25rem !important;
 }.rounded-r-full{
   border-top-right-radius: 9999px !important;
   border-bottom-right-radius: 9999px !important;
@@ -633,37 +631,26 @@ video {
   letter-spacing: -0.025em !important;
 }.tracking-widest{
   letter-spacing: 0.1em !important;
-}.text-cyan-300{
-  --tw-text-opacity: 1 !important;
-  color: rgb(103 232 249 / var(--tw-text-opacity)) !important;
-}.text-cyan-500{
-  --tw-text-opacity: 1 !important;
-  color: rgb(6 182 212 / var(--tw-text-opacity)) !important;
 }.text-gray-600{
   --tw-text-opacity: 1 !important;
   color: rgb(75 85 99 / var(--tw-text-opacity)) !important;
 }.text-gray-800{
   --tw-text-opacity: 1 !important;
   color: rgb(31 41 55 / var(--tw-text-opacity)) !important;
-}.text-white{
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }.text-turquoise-300{
   --tw-text-opacity: 1 !important;
   color: rgb(100 241 206 / var(--tw-text-opacity)) !important;
-}.text-turquoise-500{
-  --tw-text-opacity: 1 !important;
-  color: rgb(2 199 164 / var(--tw-text-opacity)) !important;
 }.text-turquoise-400{
   --tw-text-opacity: 1 !important;
   color: rgb(36 224 184 / var(--tw-text-opacity)) !important;
-}.text-turquoise-600{
+}.text-white{
   --tw-text-opacity: 1 !important;
-  color: rgb(0 162 135 / var(--tw-text-opacity)) !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}.text-gray-900{
+  --tw-text-opacity: 1 !important;
+  color: rgb(17 24 39 / var(--tw-text-opacity)) !important;
 }.no-underline{
   text-decoration-line: none !important;
-}.decoration-cyan-500{
-  text-decoration-color: #06b6d4 !important;
 }.decoration-turquoise-500{
   text-decoration-color: #02c7a4 !important;
 }.decoration-1{
@@ -673,25 +660,15 @@ video {
   -moz-osx-font-smoothing: grayscale !important;
 }.opacity-25{
   opacity: 0.25 !important;
-}.ring{
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color) !important;
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color) !important;
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000) !important;
-}.hover\:text-cyan-500:hover{
-  --tw-text-opacity: 1 !important;
-  color: rgb(6 182 212 / var(--tw-text-opacity)) !important;
 }.hover\:text-gray-800:hover{
   --tw-text-opacity: 1 !important;
   color: rgb(31 41 55 / var(--tw-text-opacity)) !important;
-}.hover\:text-white:hover{
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
-}.hover\:text-turquoise-500:hover{
-  --tw-text-opacity: 1 !important;
-  color: rgb(2 199 164 / var(--tw-text-opacity)) !important;
 }.hover\:text-turquoise-400:hover{
   --tw-text-opacity: 1 !important;
   color: rgb(36 224 184 / var(--tw-text-opacity)) !important;
+}.hover\:text-white:hover{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }.hover\:underline:hover{
   text-decoration-line: underline !important;
 }@media (min-width: 640px){.sm\:px-10{
