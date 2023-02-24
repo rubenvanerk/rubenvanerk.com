@@ -28,8 +28,5 @@ php composer.phar install
 # GENERATE APP KEY
 php artisan key:generate
 
-npm install
-npm run prod
-
 # BUILD STATIC SITE
 php please ssg:generate
