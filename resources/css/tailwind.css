@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 
-@import "site";
+@import "site.css";
+@import "torchlight.css";
 
 @import "tailwindcss/components";
 
