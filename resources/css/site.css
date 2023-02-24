@@ -1,4 +1,5 @@
 @import url('https://rsms.me/inter/inter.css');
+@import url(https://fonts.bunny.net/css?family=lalezar:400);
 
 body {
     @apply text-gray-800;
