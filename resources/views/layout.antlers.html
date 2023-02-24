@@ -9,7 +9,6 @@
 
     <meta name="description" content="{{ excerpt ?? title }}">
 
-    <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
 
     <meta name="theme-color" content="24e0b8">
     {{ asset url="/assets/site/favicon/apple-touch-icon.png" }}
@@ -25,7 +24,7 @@
         <link rel="manifest" href="{{ url }}">
     {{ /asset }}
 
-    <script src="{{ mix src='/js/site.js' }}" defer></script>
+    {{ vite src="resources/css/tailwind.css|resources/js/site.js" }}
     <script defer data-domain="rubenvanerk.com" src="https://plausible.wrve.nl/js/script.js"></script>
 </head>
 <body class="bg-white font-sans leading-normal text-grey-800 px-4 sm:px-10" x-data="{ showMobileNav: false }">
