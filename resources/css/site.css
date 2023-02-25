@@ -1,114 +1,15 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url(https://fonts.bunny.net/css?family=lalezar:400);
 
-body {
-    @apply text-gray-800;
-}
-
 h1 {
     @apply text-4xl font-bold leading-none mb-16;
 }
 
-/*!* add reusable gradient */
 @layer utilities {
     .the-gradient {
-        @apply bg-gradient-to-tl from-salmon-300 to-golden-tainoi-400;
+        @apply bg-gradient-to-br from-golden-tainoi-300 to-salmon-300;
     }
 }
-
-
-.content {
-    > h2 {
-        @apply text-2xl font-bold leading-none mt-12 py-6;
-    }
-
-    > h3 {
-
-    > ul li *:not(pre) code,
-    > ul li > code,
-    > ol li *:not(pre) code,
-    > ol li > code {
-        @apply inline-block bg-gray-800 text-white text-sm p-1 leading-none whitespace-nowrap font-mono align-baseline;
-    }@apply text-xl font-semibold leading-none py-6;
-    }
-
-    > h4 {
-        @apply font-bold uppercase tracking-widest leading-none py-6;
-    }
-
-    > p {
-        @apply mb-6 text-lg;
-    }
-
-    > p:first-of-type {
-        @apply text-2xl;
-    }
-
-    > blockquote {
-        @apply text-center font-black italic px-4 mb-12 pt-6 text-3xl leading-tight;
-    }
-
-    > blockquote > p {
-        @apply text-3xl leading-tight;
-    }
-
-    img {
-        @apply my-12;
-    }
-
-    a {
-        @apply text-cyan-500 font-medium underline;
-        &:hover {
-            @apply text-black;
-        }
-    }
-
-    ul:not(.list-none) {
-        @apply pl-0 list-disc ml-10 mb-6 text-lg;
-        li {
-            @apply mb-1;
-        }
-    }
-
-    ol {
-        @apply pl-0 list-decimal ml-10 mb-6 text-lg;
-        > li {
-            @apply mb-1;
-        }
-    }
-
-    > p code,
-    > ul li *:not(pre) code,
-    > ul li > code,
-    > ol li *:not(pre) code,
-    > ol li > code {
-        @apply inline-block bg-gray-800 text-white text-sm p-1 leading-none whitespace-nowrap font-mono align-baseline;
-    }
-
-    > pre, pre&, > ul li pre, > ol li pre {
-        @apply flex p-0 bg-gray-800 text-gray-300 text-sm leading-loose mb-6;
-    }
-
-    > pre code, pre code&, > ul li pre code, > ol li pre code {
-        @apply p-4;
-    }
-
-    > table {
-        @apply w-full text-left border border-gray-800 border-collapse mb-6 text-sm;
-        th {
-            @apply font-bold text-gray-800 bg-gray-200 p-2 uppercase tracking-widest border-t-4 border-b border-gray-800;
-        }
-
-        td {
-            @apply p-3 border-b border-gray-800 text-sm;
-        }
-
-        p {
-            @apply leading-normal;
-        }
-  }
-}
-
 
 /* Responsive Wangjangling */
 @screen lg {

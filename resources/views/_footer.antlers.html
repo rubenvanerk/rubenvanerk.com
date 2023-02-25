@@ -1,10 +1,19 @@
-<nav class="flex items-center justify-between flex-wrap py-12 lg:py-24 max-w-5xl mx-auto">
-    <div class="text-sm">&copy; {{ now format="Y" }} {{ settings:site_name }} – Powered by <a href="https://statamic.com" class="font-semibold hover:text-turquoise-400 transition">Statamic</a></div>
-    <div class="flex items-center">
+<nav class="flex flex-col items-center py-12 lg:py-16 max-w-5xl mx-auto gap-6">
+
+    <div class="flex items-center gap-8">
         {{ settings:social }}
-            <a href="{{ url }}" class="ml-4" aria-label="{{ name }}" rel="noopener">
-                {{ svg :src="icon" class="h-6 w-6 hover:text-turquoise-400 transition" }}
-            </a>
+        <a href="{{ url }}" aria-label="{{ name }}" rel="noopener">
+            {{ svg :src="icon" class="h-6 w-6 hover:text-turquoise-400 transition" }}
+        </a>
         {{ /settings:social }}
     </div>
+
+    <div class="text-sm">&copy; {{ now format="Y" }} {{ settings:site_name }}</div>
+
+    <div class="text-sm flex flex-col sm:flex-row flex-wrap items-center space-x-2">
+        <div>Powered by <a href="https://statamic.com" class="font-semibold hover:text-white transition">Statamic</a></div>
+        <div class="hidden sm:block">—</div>
+        <div>Syntax highlighting by <a href="https://torchlight.dev" class="font-semibold hover:text-white transition">Torchlight</a></div>
+    </div>
+
 </nav>
