@@ -1,8 +1,12 @@
-<div class="max-w-5xl mx-auto relative py-16 lg:pt-40 lg:pb-32">
-    <article class="content">
+<div class="max-w-5xl mx-auto relative flex flex-col sm:flex-row py-16 lg:pt-40 lg:pb-32 gap-4">
+    <article>
         <p class="font-medium text-lg">{{ subtitle }}</p>
         <h1 class="font-display">{{ content }}</h1>
     </article>
+
+    {{ asset url="/assets/site/me.jpg" }}
+        <img src="{{ glide :src="url" w="200" h="200" }}" alt="{{ alt }}" class="rounded-full h-24 w-24 lg:h-40 lg:w-40 p-2 the-gradient hover:rotate-12 transition">
+    {{ /asset }}
 </div>
 
 <div class="max-w-2xl mx-auto pb-32">
