@@ -12,16 +12,18 @@
 <div class="max-w-2xl mx-auto pb-32">
     {{ collection:articles limit="5" as="articles" }}
         {{ articles }}
-            <a href="{{ url }}" class="-m-8 p-8 mb-8 rounded-lg group block hover:bg-turquoise-200/50 hover:shadow transition">
-                <h2 class="mb-4">
-                    <span class="the-gradient text-4xl tracking-tight leading-tight font-display group-hover:text-transparent bg-clip-text transition">
-                        {{ title | widont }}
-                    </span>
-                </h2>
-                <p class="text-slate-600">
-                    <span class="text-slate-800 text-sm uppercase tracking-widest font-medium">{{ date }}</span> &mdash;
-                    {{ excerpt | widont ?? content | strip_tags | safe_truncate(150, '...') }}
-                </p>
+            <a href="{{ url }}" class="-my-4 py-4 -mx-4 px-4 md:-my-8 md:py-8 md:-mx-8 md:px-8 rounded-lg group block hover:bg-turquoise-200/50 hover:shadow transition">
+                <div>
+                    <h2 class="mb-4">
+                        <span class="the-gradient text-4xl tracking-tight leading-tight font-display group-hover:text-transparent bg-clip-text transition">
+                            {{ title | widont }}
+                        </span>
+                    </h2>
+                    <p class="text-slate-600">
+                        <span class="text-slate-800 text-sm uppercase tracking-widest font-medium">{{ date }}</span> &mdash;
+                        {{ excerpt | widont ?? content | strip_tags | safe_truncate(150, '...') }}
+                    </p>
+                </div>
             </a>
         {{ /articles }}
     {{ /collection:articles }}
