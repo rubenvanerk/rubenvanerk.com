@@ -3,11 +3,7 @@
     <article class="lg:py-32 max-w-2xl mx-auto">
         <h1 class="font-display mb-16">{{ title }}</h1>
         <div class="bg-slate-600 font-bold shadow-lg inline-block text-sm mb-16 pr-4 pl-16 -ml-16 uppercase tracking-widest text-white py-1 rounded-r-full">
-            Published
-            {{ if topics }}
-                in {{ topics }}<a href="{{ url }}" class="text-turquoise-200 no-underline hover:text-white transition">{{ title }}</a>{{ unless last }}, {{ /unless }}{{ /topics }}
-            {{ /if }}
-            on {{ date format="M j, Y" }}
+            Published on {{ date format="M j, Y" }}
         </div>
         <article class="content prose prose-slate lg:prose-xl prose-headings:text-slate-600 prose-headings:font-display prose-pre:p-0 lg:prose-pre:-mx-16 prose-pre:shadow-lg">
             {{ content | widont }}

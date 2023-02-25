@@ -5,18 +5,14 @@
     </article>
 
     {{ asset url="/assets/site/me.jpg" }}
-        <img src="{{ glide :src="url" w="200" h="200" }}" alt="{{ alt }}" class="rounded-full h-24 w-24 lg:h-40 lg:w-40 p-2 the-gradient hover:rotate-12 transition">
+        <img src="{{ glide :src="url" w="200" h="200" }}" alt="{{ alt }}" class="rounded-full shadow h-24 w-24 lg:h-40 lg:w-40 p-2 the-gradient hover:rotate-12 transition">
     {{ /asset }}
 </div>
 
 <div class="max-w-2xl mx-auto pb-32">
     {{ collection:articles limit="5" as="articles" }}
-        {{ if no_results }}
-            <h2 class="text-3xl italic tracking-tight">Feel the rhythm! Feel the rhyme! Get on up, it's writing time! Cool writings!</h2>
-        {{ /if }}
-
         {{ articles }}
-            <a href="{{ url }}" class="mb-16 group block">
+            <a href="{{ url }}" class="-m-8 p-8 mb-8 rounded-lg group block hover:bg-turquoise-200/50 hover:shadow transition">
                 <h2 class="mb-4">
                     <span class="the-gradient text-4xl tracking-tight leading-tight font-display group-hover:text-transparent bg-clip-text transition">
                         {{ title | widont }}
