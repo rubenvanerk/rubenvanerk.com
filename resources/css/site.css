@@ -9,6 +9,14 @@ h1 {
     @apply text-4xl font-bold leading-none mb-16;
 }
 
+/*!* add reusable gradient */
+@layer utilities {
+    .the-gradient {
+        @apply bg-gradient-to-tl from-salmon-300 to-golden-tainoi-400;
+    }
+}
+
+
 .content {
     > h2 {
         @apply text-2xl font-bold leading-none mt-12 py-6;

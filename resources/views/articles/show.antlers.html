@@ -1,8 +1,8 @@
 <div class="max-w-5xl mx-auto relative mt-16 pb-6 content">
-    {{ svg src="/assets/site/dddivided/dddivided.svg" class="absolute text-gray-800 mt-8 top-0 left-0 w-20 hidden md:block" }}
+    {{ svg src="/assets/site/dddivided/dddivided.svg" class="absolute mt-8 top-0 left-0 w-20 hidden lg:block" }}
     <article class="lg:py-32 max-w-2xl mx-auto">
         <h1 class="font-display">{{ title }}</h1>
-        <div class="bg-gradient-to-br from-golden-tainoi-400 to-salmon-500 font-bold shadow-md inline-block text-sm mb-16 pr-4 pl-16 -ml-16 uppercase tracking-widest text-white py-1 rounded-r-full">
+        <div class="bg-slate-600 font-bold shadow inline-block text-sm mb-16 pr-4 pl-16 -ml-16 uppercase tracking-widest text-white py-1 rounded-r-full">
             Published
             {{ if topics }}
                 in {{ topics }}<a href="{{ url }}" class="text-turquoise-200 no-underline hover:text-white transition">{{ title }}</a>{{ unless last }}, {{ /unless }}{{ /topics }}

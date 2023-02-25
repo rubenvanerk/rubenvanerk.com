@@ -2,3 +2,7 @@ name: Ruben
 super: true
 id: 3dc3f142-994f-4ab8-a7e1-c6b36f0524d0
 password_hash: $2y$10$yiAY3lgLgiwqmWHijv1ihOIxeVnW3giAtjdzwgLNJISf1N8.FOGym
+preferences:
+  collections:
+    articles:
+      after_save: continue_editing
