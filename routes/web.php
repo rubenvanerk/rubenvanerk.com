@@ -2,17 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::statamic('example', 'example-view', [
-//    'title' => 'Example'
-// ]);
+Route::get('social-image/{entry}', function ($entry) {
+    $entry = \Statamic\Entries\Entry::find($entry);
+    return (new \Statamic\View\View)
+        ->template('social_image')
+        ->with([
+            'title' => $entry->title,
+            'date' => $entry->date,
+        ]);
+})->name('social-image');
