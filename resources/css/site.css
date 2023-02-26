@@ -1,6 +1,15 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url(https://fonts.bunny.net/css?family=lalezar:400);
 
+html {
+    height: 100%;
+    @apply the-gradient;
+}
+
+body {
+    min-height: 100%;
+}
+
 h1 {
     @apply text-4xl font-bold leading-none;
 }
@@ -18,8 +27,9 @@ h1 {
     }
 
     .content {
-        > h2 {
-            @apply text-3xl mt-16 py-6;
-        }
+
+    > h2 {
+        @apply text-3xl mt-16 py-6;
     }
+}
 }
