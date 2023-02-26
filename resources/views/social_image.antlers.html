@@ -7,20 +7,26 @@
 </head>
 <body class="antialiased">
 <div class="w-[1200px] h-[630px] the-gradient p-6 text-slate-600 text-3xl space-y-3">
-    <div class="bg-turquoise-400 rounded-lg shadow p-10 h-full flex flex-col justify-around relative">
-        <div class="absolute bottom-6 right-6 font-medium tracking-tight text-xl rounded-2xl bg-gradient-to-br from-turquoise-200/80 to-turquoise-300/80 shadow w-fit px-4">
-            rubenvanerk.com
-        </div>
-        <div class="flex items-center justify-between space-x-8">
+    <div class="bg-turquoise-400 rounded-3xl shadow p-10 h-full flex flex-col justify-around relative">
+        <div class="flex items-center justify-between space-x-8 -mt-8">
             <div>
-                <span class="text-2xl font-medium">{{ date format="M j, Y" }}</span>
-                <h1 class="font-extrabold font-display text-6xl leading-tight line-clamp-4">{{ title }}</h1>
+                {{ if subtitle }}
+                    <div class="bg-slate-600 font-bold shadow-md inline-block text-2xl mb-4 pr-4 pl-16 -ml-16 uppercase tracking-widest text-white py-1 rounded-r-full">
+                        {{ subtitle }}
+                    </div>
+                {{ /if }}
+                <h1 class="font-extrabold font-display text-7xl tracking-wide leading-tightest line-clamp-4">{{ title }}</h1>
             </div>
+
             <div class="shrink-0">
                 {{ asset url="/assets/site/me.jpg" }}
                     <img src="{{ glide :src="url" w="200" h="200" }}" alt="{{ alt }}" class="rounded-full shadow h-24 w-24 lg:h-40 lg:w-40 p-2 the-gradient transition">
                 {{ /asset }}
             </div>
+        </div>
+
+        <div class="absolute bottom-6 right-6 font-semibold text-3xl rounded-2xl bg-gradient-to-br from-turquoise-200/80 to-turquoise-300/80 shadow w-fit px-4 py-0.5">
+            rubenvanerk.com
         </div>
     </div>
 </div>

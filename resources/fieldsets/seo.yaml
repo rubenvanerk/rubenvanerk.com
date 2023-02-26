@@ -1,0 +1,24 @@
+title: SEO
+fields:
+  -
+    handle: image_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Image title'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: image_subtitle
+    field:
+      input_type: text
+      antlers: false
+      display: 'Image subtitle'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
