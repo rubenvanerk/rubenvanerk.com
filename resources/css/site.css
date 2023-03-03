@@ -3,7 +3,7 @@
 
 html {
     height: 100%;
-    @apply the-gradient;
+    @apply gradient-primary;
 }
 
 body {
@@ -15,7 +15,7 @@ h1 {
 }
 
 @layer utilities {
-    .the-gradient {
+    .gradient-primary {
         @apply bg-gradient-to-br from-golden-tainoi-300 to-salmon-300;
     }
 }

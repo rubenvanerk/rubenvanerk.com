@@ -5,7 +5,7 @@
     </article>
 
     {{ asset url="/assets/site/me.jpg" }}
-        <img src="{{ glide :src="url" w="200" h="200" }}" alt="{{ alt }}" class="rounded-full shadow h-24 w-24 lg:h-40 lg:w-40 p-2 the-gradient hover:rotate-12 transition">
+        <img src="{{ glide :src="url" w="200" h="200" }}" alt="{{ alt }}" class="rounded-full shadow h-24 w-24 lg:h-40 lg:w-40 p-2 gradient-primary hover:rotate-12 transition">
     {{ /asset }}
 </div>
 
@@ -15,7 +15,7 @@
             <a href="{{ url }}" class="-my-4 py-4 -mx-4 px-4 md:-my-8 md:py-8 md:-mx-8 md:px-8 rounded-lg group block hover:bg-gradient-to-br from-turquoise-200/50 to-turquoise-300/50 hover:shadow transition">
                 <div>
                     <h2 class="mb-4">
-                        <span class="the-gradient text-4xl tracking-tight leading-tight font-display group-hover:text-transparent bg-clip-text transition">
+                        <span class="gradient-primary text-4xl tracking-tight leading-tight font-display group-hover:text-transparent bg-clip-text transition">
                             {{ title | widont }}
                         </span>
                     </h2>
