@@ -2,23 +2,25 @@
     {{ svg src="/assets/site/dddivided/dddivided.svg" class="absolute mt-8 top-0 left-0 w-20 hidden lg:block" }}
     <article class="lg:py-32 max-w-2xl mx-auto">
         <h1 class="font-display mb-16">{{ title }}</h1>
+
         <div
             class="bg-slate-600 font-bold shadow-lg inline-block text-sm mb-16 pr-4 pl-16 -ml-16 uppercase tracking-widest text-white py-1 rounded-r-full">
             Published on {{ date format="M j, Y" }}
         </div>
+
         <div
-            class="content prose prose-slate lg:prose-xl prose-headings:text-slate-600 prose-headings:font-display prose-pre:p-0 lg:prose-pre:-mx-16 prose-pre:shadow-lg">
+            class="content prose prose-slate lg:prose-xl prose-headings:text-slate-600 prose-headings:font-display prose-pre:p-0 lg:prose-pre:-mx-16 prose-pre:shadow-lg prose-a:font-medium hover:prose-a:text-slate-500 prose-a:transition">
             {{ content | widont }}
         </div>
-
 
         <div class="mt-16">
             Do you have feedback or comments?
             Let me know on
             <a href="https://twitter.com/wrubenvanerk"
-               class="gradient-primary text-slate-700 hover:text-transparent bg-clip-text transition transition font-medium"
+               class="transition font-medium hover:text-slate-500 underline"
                target="_blank"
                rel="noopener noreferrer">Twitter</a>!
         </div>
+
     </article>
 </div>

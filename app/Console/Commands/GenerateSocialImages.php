@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use App\Actions\CreateSocialImageAction;
-use App\Listeners\CreateSocialImageListener;
 use Illuminate\Console\Command;
 use Statamic\Entries\Entry;
 
