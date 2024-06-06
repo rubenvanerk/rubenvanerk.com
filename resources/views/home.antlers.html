@@ -2,6 +2,23 @@
     <article>
         <p class="font-medium text-lg pb-2">{{ subtitle }}</p>
         <h1 class="font-display">{{ content }}</h1>
+
+        <div class="mt-6 max-w-lg">
+            <h2 class="font-medium text-lg leading-8">I work with these organizations to improve animal welfare</h2>
+            <div
+                class="mx-auto flex justify-between max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                {{ collection:organizations as="organizations" }}
+                    {{ organizations }}
+                    <a href="{{ website }}" class="hover:opacity-50 transition" target="_blank">
+                        {{ logo }}
+                        <img
+                            src="{{ url }}" alt="{{ title }}" width="158" height="48">
+                        {{ /logo }}
+                    </a>
+                    {{ /organizations }}
+                {{ /collection:organizations }}
+            </div>
+        </div>
     </article>
 
     {{ asset url="/assets/site/me.jpg" }}
@@ -12,19 +29,21 @@
 <div class="max-w-2xl mx-auto pb-32">
     {{ collection:articles limit="5" as="articles" }}
         {{ articles }}
-            <a href="{{ url }}" class="-my-4 py-4 -mx-4 px-4 md:-my-8 md:py-8 md:-mx-8 md:px-8 rounded-lg group block hover:bg-gradient-to-br from-turquoise-200/50 to-turquoise-300/50 hover:shadow active:shadow-inner transition">
-                <div>
-                    <h2 class="mb-4">
-                        <span class="gradient-primary text-4xl tracking-tight leading-tight font-display group-hover:text-transparent bg-clip-text transition">
+        <a href="{{ url }}"
+           class="-my-4 py-4 -mx-4 px-4 md:-my-8 md:py-8 md:-mx-8 md:px-8 rounded-lg group block hover:bg-gradient-to-br from-turquoise-200/50 to-turquoise-300/50 hover:shadow active:shadow-inner transition">
+            <div>
+                <h2 class="mb-4">
+                        <span
+                            class="gradient-primary text-4xl tracking-tight leading-tight font-display group-hover:text-transparent bg-clip-text transition">
                             {{ title | widont }}
                         </span>
-                    </h2>
-                    <p class="text-slate-600">
-                        <span class="text-slate-800 text-sm uppercase tracking-widest font-medium">{{ date }}</span> &mdash;
-                        {{ excerpt | widont ?? content | strip_tags | safe_truncate(150, '...') }}
-                    </p>
-                </div>
-            </a>
+                </h2>
+                <p class="text-slate-600">
+                    <span class="text-slate-800 text-sm uppercase tracking-widest font-medium">{{ date }}</span> &mdash;
+                    {{ excerpt | widont ?? content | strip_tags | safe_truncate(150, '...') }}
+                </p>
+            </div>
+        </a>
         {{ /articles }}
     {{ /collection:articles }}
 </div>
