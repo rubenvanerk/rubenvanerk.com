@@ -1,4 +1,4 @@
-<div class="max-w-5xl mx-auto relative flex flex-col justify-between sm:flex-row py-16 lg:pt-40 lg:pb-32 gap-4">
+<div class="max-w-5xl mx-auto relative flex flex-col justify-between sm:flex-row py-16 lg:pt-40 lg:pb-48 gap-4">
     <article>
         <p class="font-medium text-lg pb-2">{{ subtitle }}</p>
         <h1 class="font-display">{{ content }}</h1>
@@ -6,7 +6,7 @@
         <div class="mt-6 max-w-lg">
             <h2 class="font-medium text-lg leading-8">I work with these organizations to improve animal welfare</h2>
             <div
-                class="mx-auto flex justify-between max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                class="mx-auto flex space-x-6 max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                 {{ collection:organizations as="organizations" }}
                     {{ organizations }}
                     <a href="{{ website }}" class="hover:opacity-50 transition" target="_blank">
@@ -21,12 +21,13 @@
         </div>
     </article>
 
-    {{ asset url="/assets/site/me.jpg" }}
-        <img src="{{ glide :src="url" w="200" h="200" }}" alt="{{ alt }}" class="rounded-full shadow h-24 w-24 lg:h-40 lg:w-40 p-2 gradient-primary hover:rotate-12 transition">
-    {{ /asset }}
+    <div class="hidden lg:block">
+        {{ partial:headshot }}
+    </div>
 </div>
 
 <div class="max-w-2xl mx-auto pb-32">
+
     {{ collection:articles limit="5" as="articles" }}
         {{ articles }}
         <a href="{{ url }}"

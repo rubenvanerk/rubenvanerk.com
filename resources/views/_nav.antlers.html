@@ -1,6 +1,15 @@
 <nav class="flex items-center justify-between lg:justify-start flex-wrap py-14 max-w-5xl mx-auto">
-    <div class="text-md antialiased font-medium">
-        <a href="/" class="gradient-primary block text-3xl lg:inline-block mr-12 font-black font-display hover:text-transparent bg-clip-text transition">{{ settings:site_name }}</a>
+
+
+    <div class="text-md antialiased font-medium flex items-center space-x-6">
+
+
+        <a href="/" class="gradient-primary group flex space-x-4 lg:space-x-0 items-center text-3xl lg:inline-block mr-12 font-black font-display hover:text-transparent bg-clip-text transition">
+            <div class="block lg:hidden">
+                {{ partial:headshot }}
+            </div>
+            <span>{{ settings:site_name }}</span>
+        </a>
     </div>
 
     {{ if false }}
