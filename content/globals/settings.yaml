@@ -3,15 +3,20 @@ data:
   site_name: 'Ruben van Erk'
   social:
     -
-      id: 3WeKMnBk
-      name: Twitter
-      url: 'https://twitter.com/wrubenvanerk'
-      icon: site/social-icons/twitter.svg
-    -
       id: VdW1vSux
       name: Github
       url: 'https://github.com/rubenvanerk/'
       icon: site/social-icons/github.svg
+    -
+      id: lx4r5r2z
+      name: LinkedIn
+      url: 'https://linkedin.com/rubenvanerk'
+      icon: site/social-icons/linkedin.svg
+    -
+      id: 3WeKMnBk
+      name: X
+      url: 'https://twitter.com/wrubenvanerk'
+      icon: site/social-icons/x.svg
     -
       id: CCDaaZwj
       name: Email
