@@ -33,14 +33,14 @@
     <script src="https://cdn.usefathom.com/script.js" data-site="XBKJCDWN" defer></script>
 </head>
 <body class="gradient-primary font-sans leading-normal text-slate-600 px-4 sm:px-20 flex flex-col justify-between" x-data="{ showMobileNav: false }">
-    <div class="relative bg-turquoise-300 mt-4 sm:mt-14 px-8 pb-16 rounded-xl shadow-lg">
+    <div class="relative bg-turquoise-300 mt-4 sm:mt-14 px-8 lg:pb-16 pb-32 rounded-xl shadow-lg">
 
         {{ partial:nav }}
 
         {{ template_content }}
 
         {{ asset url="/assets/site/corals.png" }}
-            <div class="absolute bottom-0 inset-x-0 w-full h-80 bg-repeat-x rounded-b-xl" style="background-image: url('{{ url }}'); background-size: 800px; background-position: bottom left;">
+            <div class="absolute bottom-0 inset-x-0 w-full min-h-36 bg-repeat-x rounded-b-xl" style="background-image: url('{{ url }}'); background-size: 800px; background-position: bottom left;">
             </div>
         {{ /asset }}
 
