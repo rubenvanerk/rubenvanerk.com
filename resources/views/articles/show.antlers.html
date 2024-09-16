@@ -1,13 +1,13 @@
 <div class="max-w-5xl mx-auto relative mt-10 pb-6 content">
 
     {{ if side_image }}
-        <img src="{{ side_image }}" class="absolute mt-8 top-0 left-0 w-40 hidden lg:block">
+        <img src="{{ side_image }}" class="absolute lg:mt-8 -mt-20 top-0 left-0 w-40 z-0 opacity-80 lg:opacity-95">
     {{  else }}
         {{ svg src="/assets/site/dddivided/dddivided.svg" class="absolute mt-8 top-0 left-0 w-20 hidden lg:block" }}
     {{ /if }}
 
-    <article class="lg:py-32 max-w-2xl mx-auto">
-        <h1 class="font-display mb-16">{{ title }}</h1>
+    <article class="lg:py-32 max-w-2xl mx-auto z-10">
+        <h1 class="font-display mb-16 z-10 relative">{{ title }}</h1>
 
         {{ partial:mark }}Published on {{ date format="M j, Y" }}{{ /partial:mark }}
 
